@@ -10,10 +10,12 @@ public class PlayerMovement : MonoBehaviour
     Animator anim;
     bool FacingRight = true;
     bool IsGrounded;
+    bool IsinWater;
     [SerializeField] float speed;
     [SerializeField] float JumpForce;
     [SerializeField] Collider2D GroundCheck;
     [SerializeField] LayerMask GroundLayer;
+    [SerializeField] LayerMask WaterLayer;
 
     void Start()
     {
@@ -25,8 +27,9 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         IsGrounded = GroundCheck.IsTouchingLayers(GroundLayer);
+        IsinWater = GroundCheck.IsTouchingLayers(WaterLayer);
 
-        if(Input.GetButtonDown("Jump") && IsGrounded)
+        if (Input.GetButtonDown("Jump") && (IsGrounded || IsinWater))
         {
             rb2d.AddForce(new Vector2(0, JumpForce));
         }

@@ -71,9 +71,10 @@ GameObject:
   - component: {fileID: 322045107708857015}
   - component: {fileID: 322045107708857009}
   - component: {fileID: 322045107708857008}
+  - component: {fileID: 322045107434431214}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,7 +132,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1793751917
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 4723107735738678597, guid: 39bc81d64453ea9428fe602014a160c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -218,3 +219,19 @@ MonoBehaviour:
   GroundLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &322045107434431214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322045107708857019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cafb47227711cb14b8250805edb95097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HeartImages:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
